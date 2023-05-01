@@ -1,0 +1,23 @@
+.product {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   font-size: 1.4rem;
+   border-bottom: 1px solid rgba(0, 0, 0, .09);
+   padding: 10px;
+
+   .search-image {
+      width: 40px;
+      height: 40px;
+      border-radius: 99px;
+   }
+
+   .search-name {
+      width: 80px;
+      text-align: justify;
+   }
+
+   .search-price {
+      font-weight: 700;
+   }
+}

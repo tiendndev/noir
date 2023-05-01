@@ -1,0 +1,31 @@
+.search-wrapper {
+   position: relative;
+   display: flex;
+
+   height: 34px;
+   border-radius: 99px;
+   border: 1px solid rgba(0, 0, 0, .09);
+   background-color: rgba(0, 0, 0, .03);
+
+   input,
+   .search-btn {
+      background-color: transparent;
+      font-size: 1.4rem;
+      color: #666;
+      padding: 0 16px;
+      border: none;
+      outline: none;
+   }
+
+   .search-btn {
+      font-size: 1.6rem;
+      cursor: pointer;
+   }
+}
+
+.search-results {
+   width: 240px;
+   height: 244px;
+   overflow-y: scroll;
+   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
