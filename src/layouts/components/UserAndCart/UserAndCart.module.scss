@@ -1,0 +1,122 @@
+.user-and-cart {
+   display: flex;
+   justify-content: space-between;
+
+   .user {
+      .username {
+         padding-right: 8px;
+      }
+   }
+
+   .devider {
+      border-left: 1px solid rgba(0, 0, 0, .1);
+      height: 30px;
+      vertical-align: middle;
+      position: relative;
+      margin: 0 10px;
+   }
+
+   .cart {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+
+      &:hover {
+         color: #60351f;
+      }
+
+      .cart-price {
+         padding-right: 8px;
+      }
+
+      .cart-icon {
+         padding-bottom: 4px;
+         font-size: 3rem;
+      }
+   }
+}
+
+.card-wrapper {
+   position: relative;
+   padding: 20px;
+   border-radius: 5px;
+   background-color: #fff;
+   box-shadow: rgba(99, 99, 99, 0.2) 0px 0px 20px 4px;
+
+   &::before {
+      content: "";
+      position: absolute;
+      top: -30px;
+      right: 88px;
+      border-width: 20px 15px;
+      border-style: solid;
+      border-color: transparent transparent #fff transparent;
+   }
+
+   .product {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 0;
+      border-bottom: 1px solid rgba(0, 0, 0, .09);
+
+      img {
+         width: 60px;
+         height: 60px;
+         cursor: pointer;
+      }
+
+      .info {
+         padding: 0 16px;
+
+         .product-name {
+            font-size: 1.6rem;
+            line-height: 1.6;
+            color: #334862;
+            cursor: pointer;
+
+            &:hover {
+               color: #000;
+            }
+         }
+
+         .quantity-and-price {
+            font-size: 1.4rem;
+
+            .quantity {
+               color: #666;
+            }
+
+            .price {
+               color: #333;
+               font-weight: 700;
+            }
+         }
+      }
+
+      .close-btn {
+         font-size: 2.4rem;
+         color: #666;
+         opacity: .7;
+         padding-top: 2px;
+         cursor: pointer;
+
+         &:hover {
+            opacity: 1;
+         }
+      }
+   }
+
+   .total-price {
+      line-height: 50px;
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: 10px;
+      color: #666;
+      border-bottom: 1px solid rgba(0, 0, 0, .09);
+
+      .price {
+         font-weight: 700;
+         color: #000;
+      }
+   }
+}

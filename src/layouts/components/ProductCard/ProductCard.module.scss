@@ -1,0 +1,94 @@
+.wrapper {
+   .image {
+      overflow: hidden;
+      width: 247px;
+      height: 296px;
+      padding: 0 10px;
+      position: relative;
+
+      &:hover .quick-view {
+         transform: translateY(0);
+         opacity: 1;
+         visibility: visible;
+      }
+
+      img {
+         position: relative;
+         width: 100%;
+         height: 100%;
+
+      }
+
+      .price-tag {
+         position: absolute;
+         left: 0px;
+         top: 30px;
+         width: 46px;
+         height: 46px;
+         text-align: center;
+         line-height: 46px;
+         border-radius: 99px;
+         color: #fff;
+         font-weight: 700;
+         background: #000;
+      }
+
+      .quick-view {
+         position: absolute;
+         bottom: 0;
+         width: 227px;
+         height: 32px;
+         margin-right: 10px;
+         color: #fff;
+         line-height: 32px;
+         font-size: 1.6rem;
+         text-align: center;
+         font-weight: 700;
+         background-color: #000;
+         transform: translateY(32px);
+         visibility: visible;
+         opacity: 0;
+         transition: all .5s;
+      }
+
+   }
+
+   .card-body {
+      padding: 0 10px;
+
+      .category {
+         font-size: 1.2rem;
+         margin-top: 4px;
+         margin-bottom: 4px;
+         color: #000;
+         opacity: .7;
+         font-weight: 400;
+      }
+
+      .name {
+         color: #000;
+         font-weight: 500;
+         font-size: 1.4rem;
+         margin-bottom: 4px;
+      }
+
+      .prices {
+         .original-price {
+            color: #000;
+            opacity: .7;
+            margin-right: 4px;
+         }
+
+         .discount-price {
+            font-weight: 700;
+         }
+      }
+
+      .add-to-cart-btn {
+         width: 160px;
+         height: 28px;
+      }
+   }
+
+
+}

@@ -1,0 +1,29 @@
+.wrapper {
+   margin-top: 30px;
+   margin-bottom: 46px;
+   display: inline-block;
+   width: 100%;
+
+   .nav-link {
+      opacity: .6;
+
+      &:hover {
+         opacity: 1;
+      }
+   }
+
+   .split-breadcrum {
+      padding: 0 10px;
+   }
+
+   .nav-link,
+   .typography {
+      font-size: 1.8rem;
+      color: #000;
+      text-decoration: none;
+   }
+
+   .typography {
+      font-weight: 700;
+   }
+}

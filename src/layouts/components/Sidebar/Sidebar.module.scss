@@ -1,0 +1,47 @@
+.wrapper {
+   width: 270px;
+   height: 1000px;
+   padding-right: 40px;
+   // background: #eee;
+
+   .filter {
+      .filter-title {
+         font-size: 1.6rem;
+         font-weight: 800;
+         color: #777;
+      }
+
+      .slider {
+         display: block;
+         width: 100%;
+         margin-top: 26px;
+         margin-bottom: 14px;
+         background: #666;
+      }
+
+      .filter-btn {
+         padding: 8px 14px;
+         outline: none;
+         border: none;
+         border-radius: 99px;
+         margin-right: 20px;
+         opacity: .9;
+         background: #666;
+         color: #fff;
+         cursor: pointer;
+
+         &:hover {
+            opacity: 1;
+         }
+      }
+
+      .filter-price {
+         color: #777;
+         font-size: 1.4rem;
+
+         span {
+            font-weight: 700;
+         }
+      }
+   }
+}

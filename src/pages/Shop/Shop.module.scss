@@ -1,0 +1,14 @@
+.wrapper {
+   .container {
+      display: flex;
+      flex-direction: row;
+   }
+
+   .shop {
+      width: 810px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(247px, 1fr));
+      grid-template-rows: auto;
+      gap: 1rem;
+   }
+}

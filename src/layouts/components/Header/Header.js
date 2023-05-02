@@ -2,9 +2,10 @@ import { Link } from 'react-router-dom';
 
 import classNames from 'classnames/bind';
 import styles from './Header.module.scss';
-import images from '../../../../assets/images';
+import config from '../../../config';
+import images from '../../../assets/images';
 import Search from '../Search/Search';
-import config from '../../../../config';
+import UserAndCart from '../UserAndCart/UserAndCart';
 
 const cx = classNames.bind(styles);
 
@@ -18,6 +19,9 @@ function Header() {
 
          {/* Search */}
          <Search />
+
+         {/* User and Cart */}
+         <UserAndCart />
       </header>
    );
 }

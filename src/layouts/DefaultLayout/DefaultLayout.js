@@ -1,7 +1,12 @@
+import classNames from 'classnames/bind';
+import styles from './DefaultLayout.module.scss';
+
 import Topbar from '../components/Topbar';
 import Header from '../components/Header';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+
+const cx = classNames.bind(styles);
 
 function DefaultLayout({ children }) {
    return (
@@ -9,7 +14,7 @@ function DefaultLayout({ children }) {
          <Topbar />
          <Header />
          <Navbar />
-         <div className="container">{children}</div>
+         <div className={cx('container')}>{children}</div>
          <Footer />
       </div>
    );
